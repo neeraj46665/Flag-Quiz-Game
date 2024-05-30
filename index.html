@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flag Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Flag Quiz Game</h1>
+        <!-- Added a Start Quiz button -->
+        <button id="start-quiz-btn" onclick="startQuiz()">Start Quiz</button>
+        <div id="quiz-container" style="display: none;">
+            <div id="flag-container">
+                <img id="flag" src="" alt="Country Flag">
+            </div>
+            <div id="choices"></div>
+            <div id="timer-bar"></div>
+            <!-- Removed the submit button -->
+            <div id="result"></div>
+        </div>
+        <div id="score-container" style="display: none;">
+            <div id="score">Score: 0</div>
+            <button id="play-again-btn" onclick="playAgain()">Play Again</button>
+        </div>
+        <div id="highest-score">Highest Score: 0</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #72EDF2 10%, #5151E5 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+.container {
+    background-color: #fff;
+    color: #333;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #5151E5;
+    text-transform: uppercase;
+}
+
+#flag-container img {
+    width: 100%;
+    max-height: 200px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+#choices {
+    margin-bottom: 20px;
+}
+
+.choice {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+}
+
+.choice:hover {
+    background-color: #e0e0e0;
+}
+
+.choice input[type="radio"] {
+    display: none;
+}
+
+.choice label {
+    display: block;
+    cursor: pointer;
+}
+
+.choice.selected {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.choice.incorrect {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#timer-bar {
+    height: 20px;
+    background-color: #007BFF;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#timer-bar div {
+    height: 100%;
+    width: 100%;
+    background-color: #28a745;
+    transition: width 0.1s linear;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #5151E5;
+}
+
+#score-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#score {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#play-again-btn {
+    font-size: 18px;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#play-again-btn:hover {
+    background-color: #218838;
+}
+
+#highest-score {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
+
+#submit-btn,
+#play-again-btn {
+    display: block;
+    margin: 20px auto;
+}
